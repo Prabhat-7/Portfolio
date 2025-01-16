@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 
-const links = [
+export const links = [
   { name: "Home", path: "/" },
   { name: "Services", path: "/services" },
   { name: "Resume", path: "/resume" },
