@@ -19,7 +19,7 @@ const buttonVariants = cva(
       size: {
         default: "h-[44px] px-6 ",
         md: "h-[48px] rounded-md px-6",
-        lg: "h-[56px] rounded-md px-8  text:sm  uppercase tracking-[2px]",
+        lg: "h-[56px] rounded-md px-8 text:sm  uppercase tracking-[2px]",
       },
     },
     defaultVariants: {
