@@ -26,9 +26,6 @@ const svgVariants = {
       when: "afterChildren",
     },
   },
-  whileHover: {
-    scale: 1.1,
-  },
 };
 const pathVariants = {
   initial: {
@@ -53,11 +50,13 @@ export default function Header() {
         <Link href="/">
           <motion.svg
             variants={svgVariants}
-            whileHover="whileHover"
+            whileHover={{
+              scale: 1.1,
+            }}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="54.1515 26.2942 21.3 29.21"
             fill="none"
-            className="h-[30] w-[30] cursor-pointer"
+            className="h-[30] w-[30] cursor-pointer  "
           >
             <motion.path
               variants={pathVariants}
@@ -70,7 +69,7 @@ export default function Header() {
         <div className="hidden xl:flex items-center gap-8">
           <Navbar />
           <Link href="/contact">
-            <Button>Contact me </Button>
+            <Button variant={"outlineGlow"}>Contact me </Button>
           </Link>
         </div>
         <div className="xl:hidden ">
