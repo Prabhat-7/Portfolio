@@ -45,6 +45,7 @@ export default function Header() {
       variants={headerVariants}
       initial="initial"
       animate="animate"
+      className=""
     >
       <div className="container mx-auto flex justify-between items-center ">
         <Link href="/">
