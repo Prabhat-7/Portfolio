@@ -31,13 +31,13 @@ import { motion } from "framer-motion";
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, nulla.",
+    "I am a passionate web developer with over 3 years of experience in building dynamic and user-centric websites and applications. I have a strong foundation in both front-end and back-end technologies, and I’m always eager to learn and grow in the ever-evolving field of web development.",
   info: [
     { fieldName: "Name", fieldValue: "Prabhat Sitaula" },
     { fieldName: "Phone", fieldValue: "(+977)9815061795" },
     { fieldName: "Expierience ", fieldValue: "3+ Years" },
-    { fieldName: "Nationality ", fieldValue: "Nepalese" },
     { fieldName: "Email ", fieldValue: "contact@prabhatsitaula.com.np" },
+    { fieldName: "Nationality ", fieldValue: "Nepalese" },
     { fieldName: "Freelance ", fieldValue: "Available" },
     { fieldName: "Languages ", fieldValue: "English,Hindi,Nepali" },
   ],
@@ -194,8 +194,28 @@ const Resume = () => {
               </div>
             </TabsContent>
             {/* about */}
-            <TabsContent value="about" className="w-full ">
-              about
+            <TabsContent
+              value="about"
+              className="w-full text-center xl:text-left"
+            >
+              <div className="flex flex-col gap-[30px]">
+                <h3 className="text-4xl font-bold">{about.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify leading-relaxed ">
+                  {about.description}
+                </p>
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                  {about.info.map((item, index) => (
+                    <li
+                      key={index}
+                      className="flex items-center justify-center xl:justify-start gap-4"
+                    >
+                      {" "}
+                      <span className=" text-white/60">{item.fieldName}</span>
+                      <span className=" text-lg">{item.fieldValue}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </TabsContent>
           </div>
         </Tabs>
