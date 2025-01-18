@@ -94,7 +94,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere fugit voluptas illum.",
+    "I have developed a diverse set of skills in modern web development, including front-end, back-end, and full-stack technologies. I continuously strive to enhance my knowledge and expertise to build efficient, user-friendly applications.",
   skillsList: [
     { icon: <FaHtml5 />, name: "Html 5" },
     { icon: <FaCss3 />, name: "Css 3" },
@@ -134,7 +134,7 @@ const Resume = () => {
           {/* content */}
           <div className="min-h-[70vh] w-full ">
             {/* education */}
-            <TabsContent value="education" className="w-full ">
+            <TabsContent value="education" className="w-full  ">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className=" text-4xl font-bold">{education.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify leading-relaxed ">
@@ -163,8 +163,35 @@ const Resume = () => {
               </div>
             </TabsContent>
             {/* skills */}
-            <TabsContent value="skills" className="w-full ">
-              skills
+            <TabsContent value="skills" className="w-full h-full">
+              <div className="flex flex-col gap-[30px]">
+                <div className="flex flex-col gap-[30px] text-center xl:text-left ">
+                  <h3 className="text-4xl font-bold">{skills.title}</h3>
+                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 text-justify leading-relaxed ">
+                    {skills.description}
+                  </p>
+                </div>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                    {skills.skillsList.map((skill, index) => (
+                      <li key={index}>
+                        <TooltipProvider delayDuration={100}>
+                          <Tooltip>
+                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group ">
+                              <div className=" text-6xl group-hover:text-accent transition-all duration-300">
+                                {skill.icon}
+                              </div>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p className="capitalize">{skill.name}</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollArea>
+              </div>
             </TabsContent>
             {/* about */}
             <TabsContent value="about" className="w-full ">
