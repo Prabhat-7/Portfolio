@@ -9,25 +9,25 @@ const services = [
     title: "Web Development",
     description:
       "Building dynamic, responsive, and user-friendly websites using modern technologies like React, TypeScript, and Next.js.",
-    href: "/web-development",
+    href: "/contact",
   },
   {
     num: "02",
     title: "AI Integration",
     description: "Enhancing applications with AI-powered solutions.",
-    href: "/ai-integration",
+    href: "/contact",
   },
   {
     num: "03",
     title: "UI/UX Design",
     description: "Designing engaging user interfaces.",
-    href: "/ui-ux-design",
+    href: "/contact",
   },
   {
     num: "04",
     title: "Website Maintenance",
     description: "Providing ongoing support and optimizations.",
-    href: "/website-maintenance",
+    href: "/contact",
   },
 ];
 export default function Services() {
@@ -38,7 +38,7 @@ export default function Services() {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+            transition: { delay: 1.2, duration: 0.4, ease: "easeIn" },
           }}
           className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
         >

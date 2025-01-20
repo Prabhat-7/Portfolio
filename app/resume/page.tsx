@@ -1,14 +1,9 @@
 "use client";
 
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaPython,
-  FaNodeJs,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3, FaReact, FaPython } from "react-icons/fa";
+import { DiNodejs } from "react-icons/di";
 import { BiLogoTypescript } from "react-icons/bi";
+import { RiJavascriptFill } from "react-icons/ri";
 import {
   SiTailwindcss,
   SiNextdotjs,
@@ -98,9 +93,9 @@ const skills = {
   skillsList: [
     { icon: <FaHtml5 />, name: "Html 5" },
     { icon: <FaCss3 />, name: "Css 3" },
-    { icon: <FaJs />, name: "JavaScript" },
+    { icon: <RiJavascriptFill />, name: "JavaScript" },
     { icon: <BiLogoTypescript />, name: "TypeScript" },
-    { icon: <FaNodeJs />, name: "Node JS" },
+    { icon: <DiNodejs className="text-[90px]" />, name: "Node JS" },
     { icon: <FaReact />, name: "React" },
     { icon: <SiNextdotjs />, name: "Next.js" },
     { icon: <SiTailwindcss />, name: "Tailwind.css" },
@@ -117,7 +112,7 @@ const Resume = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 1.2, duration: 0.4, ease: "easeIn" },
       }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
