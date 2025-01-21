@@ -12,7 +12,8 @@ const jetBrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Prabhat Sitaula",
-  description: "",
+  description:
+    "Explore the personal portfolio of Prabhat Sitaula, a passionate web developer specializing in modern web technologies .",
 };
 
 export default function RootLayout({
