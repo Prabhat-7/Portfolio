@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
-
+import Head from "next/head";
 import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/pageTransition";
@@ -23,6 +23,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <title>{String(metadata.title)}</title>
+        <meta name="description" content={String(metadata.description)} />
+        <meta
+          name="keywords"
+          content="Prabhat Sitaula, Web Developer, React, Django, Portfolio"
+        />
+        <meta name="author" content="Prabhat Sitaula" />
+      </Head>
       <body className={`${jetBrainsMono.variable}`}>
         <Header />
         <PageTransition>{children}</PageTransition>
