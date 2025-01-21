@@ -4,7 +4,7 @@ const stats = [
   { num: 3, text: "Years of experience" },
   { num: 7, text: "Projects completed" },
   { num: 13, text: "Technologies Mastered" },
-  { num: 100, text: "Code Commits" },
+  { num: 99, text: "Code Commits" },
 ];
 const Stats = () => {
   return (
@@ -20,7 +20,7 @@ const Stats = () => {
                 end={item.num}
                 duration={4}
                 delay={2}
-                className="text-4xl xl:text-6xl font-extrabold"
+                className="text-3xl xl:text-6xl font-extrabold"
               />
               <p
                 className={`${
