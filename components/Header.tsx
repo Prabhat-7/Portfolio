@@ -70,7 +70,7 @@ export default function Header() {
         <div className="hidden xl:flex items-center gap-8">
           <Navbar />
           <Link href="/contact">
-            <Button variant={"outlineGlow"}>Contact me </Button>
+            <Button variant={"outline"}>Contact me </Button>
           </Link>
         </div>
         <div className="xl:hidden ">

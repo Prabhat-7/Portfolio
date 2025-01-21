@@ -22,7 +22,6 @@ const Socials = ({ containerStyles = "", iconStyles = "" }: SocialProps) => {
           key={index}
           className={iconStyles}
           target="_blank"
-          rel="noopener noreferrer"
         >
           {item.icons}
         </Link>
