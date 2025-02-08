@@ -12,7 +12,7 @@ const Photo = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 2, duration: 0.4, ease: "easeIn" },
+            transition: { delay: 0, duration: 0.4, ease: "easeIn" },
           }}
           className="w-[300px] h-[300px] mix-blend-lighten absolute inset-0"
         >
