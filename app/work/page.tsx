@@ -78,9 +78,9 @@ const projects = [
   {
     num: "04",
     category: "AI-integrated",
-    title: "AI-Powered Drawing App",
+    title: "AI-Powered Drawing Analysis App",
     description:
-      "An AI-integrated drawing app where users can sketch and get AI-generated solutions.",
+      "A unique app that lets you draw anything, and then uses AI to instantly analyze your sketch and provide helpful solutions. It’s perfect for problem-solving, learning, or just getting creative. Whether you're an educator, designer, or someone with a curious mind, SketchMind makes it easy to turn your drawings into useful answers.",
     stack: [
       { icon: <SiDjango />, name: "Django" },
       { icon: <BiLogoTypescript />, name: "TypeScript" },
@@ -98,7 +98,7 @@ const projects = [
       },
     ],
     image: `${imagePath}image4.png`,
-    github: "https://github.com/Prabhat-7/AI-Powered-Drawing-App.git",
+    github: "https://github.com/Prabhat-7/SketchMind.git",
   },
   {
     num: "05",
@@ -123,6 +123,31 @@ const projects = [
       },
     ],
     image: `${imagePath}image5.png`,
+    github: "https://github.com/Prabhat-7/AiChatBot.git",
+  },
+  {
+    num: "06",
+    category: "AI-integrated",
+    title: "SolveXa-A smart note taker",
+    description:
+      "An AI-powered tool that makes taking notes from PDFs effortless. Just ask a question, and the AI provides answers directly in a text editor,helping you organize notes faster. It also includes user authentication, and a secure payment system for premium features.",
+    stack: [
+      { icon: <SiDjango />, name: "Django" },
+      { icon: <BiLogoTypescript />, name: "TypeScript" },
+      { icon: <FaReact />, name: "React" },
+      { icon: <FaCss3 />, name: "Css 3" },
+      { icon: <FaPython />, name: "Python" },
+      { icon: <FaHtml5 />, name: "Html 5" },
+      {
+        icon: (
+          <div className="-mt-1">
+            <SiLangchain size={35} />
+          </div>
+        ),
+        name: "Langchain",
+      },
+    ],
+    image: `${imagePath}image6.png`,
     github: "https://github.com/Prabhat-7/AiChatBot.git",
   },
 ];
