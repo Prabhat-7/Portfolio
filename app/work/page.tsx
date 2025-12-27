@@ -21,22 +21,34 @@ import { SiLangchain, SiMysql } from "react-icons/si";
 import { SiDjango } from "react-icons/si";
 import WorkSliderButtons from "@/components/WorkSliderButtons";
 const imagePath = "/assets/work/";
+
 const projects = [
-  {
+{
     num: "01",
-    category: "frontend",
-    title: "Snake Game",
+    category: "AI-integrated",
+    title: "AI-Powered Drawing Analysis App",
     description:
-      "A fun snake game built with React where users control the snake to eat food and grow.",
+      "A unique app that lets you draw anything, and then uses AI to instantly analyze your sketch and provide helpful solutions. It’s perfect for problem-solving, learning, or just getting creative. Whether you're an educator, designer, or someone with a curious mind, SketchMind makes it easy to turn your drawings into useful answers.",
     stack: [
-      { icon: <FaHtml5 />, name: "Html 5" },
-      { icon: <FaCss3 />, name: "Css 3" },
-      { icon: <RiJavascriptFill />, name: "JavaScript" },
+      { icon: <SiDjango />, name: "Django" },
+      { icon: <BiLogoTypescript />, name: "TypeScript" },
       { icon: <FaReact />, name: "React" },
+      { icon: <FaCss3 />, name: "Css 3" },
+      { icon: <FaPython />, name: "Python" },
+      { icon: <FaHtml5 />, name: "Html 5" },
+      {
+        icon: (
+          <div className="-mt-1">
+            <SiLangchain size={35} />
+          </div>
+        ),
+        name: "Langchain",
+      },
     ],
-    image: `${imagePath}image1.png`,
-    github: "https://github.com/Prabhat-7/Snake-game.git",
+    image: `${imagePath}image4.png`,
+    github: "https://github.com/Prabhat-7/SketchMind.git",
   },
+  
   {
     num: "02",
     category: "frontend",
@@ -75,33 +87,9 @@ const projects = [
     image: `${imagePath}image3.png`,
     github: "https://github.com/Prabhat-7/Todo-List.git",
   },
+  
   {
     num: "04",
-    category: "AI-integrated",
-    title: "AI-Powered Drawing Analysis App",
-    description:
-      "A unique app that lets you draw anything, and then uses AI to instantly analyze your sketch and provide helpful solutions. It’s perfect for problem-solving, learning, or just getting creative. Whether you're an educator, designer, or someone with a curious mind, SketchMind makes it easy to turn your drawings into useful answers.",
-    stack: [
-      { icon: <SiDjango />, name: "Django" },
-      { icon: <BiLogoTypescript />, name: "TypeScript" },
-      { icon: <FaReact />, name: "React" },
-      { icon: <FaCss3 />, name: "Css 3" },
-      { icon: <FaPython />, name: "Python" },
-      { icon: <FaHtml5 />, name: "Html 5" },
-      {
-        icon: (
-          <div className="-mt-1">
-            <SiLangchain size={35} />
-          </div>
-        ),
-        name: "Langchain",
-      },
-    ],
-    image: `${imagePath}image4.png`,
-    github: "https://github.com/Prabhat-7/SketchMind.git",
-  },
-  {
-    num: "05",
     category: "AI-integrated",
     title: "AI ChatBot",
     description:
@@ -126,7 +114,7 @@ const projects = [
     github: "https://github.com/Prabhat-7/AiChatBot.git",
   },
   {
-    num: "06",
+    num: "05",
     category: "AI-integrated",
     title: "SolveXa-A smart note taker",
     description:
@@ -150,6 +138,21 @@ const projects = [
     image: `${imagePath}image6.png`,
     github: "https://github.com/Prabhat-7/AiChatBot.git",
   },
+{
+    num: "06",
+    category: "frontend",
+    title: "Snake Game",
+    description:
+      "A fun snake game built with React where users control the snake to eat food and grow.",
+    stack: [
+      { icon: <FaHtml5 />, name: "Html 5" },
+      { icon: <FaCss3 />, name: "Css 3" },
+      { icon: <RiJavascriptFill />, name: "JavaScript" },
+      { icon: <FaReact />, name: "React" },
+    ],
+    image: `${imagePath}image1.png`,
+    github: "https://github.com/Prabhat-7/Snake-game.git",
+  }
 ];
 
 const Work = () => {
